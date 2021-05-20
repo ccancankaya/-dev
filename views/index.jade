@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1= 'IP Adresini:'
+  h3 #{title}
+table
+  thead
+    tr
+      th Tarih 
+      th IP Adresi
+  tbody
+    each item in list
+      tr
+        td=item
